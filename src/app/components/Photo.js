@@ -1,9 +1,15 @@
 import React from "react";
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
+import PhotoMain from "../../img/photo-main.png";
+
 function Photo() {
-  return <div>Photo</div>;
+  const Image = styled.div`
+    background-image: url(${PhotoMain});
+    width: 249px;
+    height: 332px;
+  `;
+  return <Image></Image>;
 }
 
 export default Photo;

@@ -40,10 +40,39 @@
 //   return <div></div>;
 // }
 
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 import React from "react";
-
+import First_prgth from "./components/First_prgth";
+import Header from "./components/Header";
+import Links from "./components/Links";
+import Navbar from "./components/Navbar";
+import Photo from "./components/Photo";
+import Second_prgth from "./components/Second_prgth";
+import Footer from "./components/Footer";
 function App() {
-  return <div>App</div>;
+  const Wrapper = styled.div`
+    display: grid;
+    grid-row-gap: 100px;
+  `;
+  return (
+    <div
+      css={css`
+        display: flex;
+        justify-content: center;
+      `}
+    >
+      <Wrapper>
+        <Header />
+        <Navbar />
+        <Photo />
+        <First_prgth />
+        <Second_prgth />
+        <Links />
+        <Footer />
+      </Wrapper>
+    </div>
+  );
 }
 
 export default App;
