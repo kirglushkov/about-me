@@ -7,7 +7,7 @@ import HeaderImage from "../../img/header-image.png";
 function Header() {
   const Image = styled.div`
     background-image: url(${HeaderImage});
-    position: absolute;
+    position: relative;
     width: 920px;
     height: 180px;
   `;

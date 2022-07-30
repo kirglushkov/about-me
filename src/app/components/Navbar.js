@@ -3,10 +3,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 function Navbar() {
-  const AboutMe = styled.span``;
-  const Skills = styled.span``;
-  const Portfolio = styled.span``;
-  const Contacts = styled.span``;
+  const Links = ["AboutMe", "Skills", "Portfolio", "Contacts"];
 
   const Navbar = styled.nav`
     font-family: Dhyana-Regular;
@@ -21,12 +18,13 @@ function Navbar() {
     grid-column-gap: 32px;
   `;
   return (
-    <Navbar>
-      <AboutMe>about me</AboutMe>
-      <Skills>skills</Skills>
-      <Portfolio>portfolio</Portfolio>
-      <Contacts>contacts</Contacts>
-    </Navbar>
+    <div>
+      <Navbar>
+        {Links.map((item) => (
+          <span>{item}</span>
+        ))}
+      </Navbar>
+    </div>
   );
 }
 

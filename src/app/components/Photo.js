@@ -8,6 +8,8 @@ function Photo() {
     background-image: url(${PhotoMain});
     width: 249px;
     height: 332px;
+    position: relative;
+    margin: 0 auto;
   `;
   return <Image></Image>;
 }

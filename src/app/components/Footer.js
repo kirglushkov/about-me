@@ -6,6 +6,7 @@ function Footer() {
     font-family: Dhyana-Regular;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
     src: local("Dhyana-Regular"),
       url("./fonts/Dhyana-Regular.ttf") format("truetype");
   `;

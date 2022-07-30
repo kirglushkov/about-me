@@ -6,23 +6,30 @@ function First_prgth() {
   const Header = styled.p2`
     font-family: Dhyana-Bold;
     font-size: 32px;
-    font-weight: 400;
     src: local("Dhyana-Bold"), url("./fonts/Dhyana-Bold.ttf") format("truetype");
   `;
 
   const Body = styled.p3`
     font-family: Dhyana-Regular;
     font-size: 22px;
-    font-weight: 400;
     src: local("Dhyana-Regular"),
       url("./fonts/Dhyana-Regular.ttf") format("truetype");
   `;
 
+  const Wrapper = styled.div`
+    font-weight: 400;
+    display: grid;
+  `;
+
   return (
-    <div>
+    <Wrapper>
       <Header>First Programmer</Header>
-      <Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Body>
-    </div>
+      <Body>
+        это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+        является стандартной "рыбой" для текстов на латинице с начала XVI века.
+        В то время некий безымянный печатник создал
+      </Body>
+    </Wrapper>
   );
 }
 

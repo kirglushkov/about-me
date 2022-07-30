@@ -53,7 +53,16 @@ import Footer from "./components/Footer";
 function App() {
   const Wrapper = styled.div`
     display: grid;
-    grid-row-gap: 100px;
+    grid-row-gap: 32px;
+    max-width: 1200px;
+  `;
+
+  const TextWrapper = styled.div`
+    display: grid;
+    grid-row-gap: 32px;
+    max-width: 720px;
+    justify-content: center;
+    margin: 0 auto;
   `;
   return (
     <div
@@ -66,8 +75,9 @@ function App() {
         <Header />
         <Navbar />
         <Photo />
-        <First_prgth />
-        <Second_prgth />
+        <TextWrapper>
+          <First_prgth /> <Second_prgth />
+        </TextWrapper>
         <Links />
         <Footer />
       </Wrapper>
