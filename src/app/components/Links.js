@@ -7,7 +7,7 @@ function Links() {
 
   const Navbar = styled.div`
     font-family: Dhyana-Regular;
-    font-size: 15px;
+    font-size: 1.4vh;
     font-weight: 400;
     text-align: center;
     src: local("Dhyana-Regular"),

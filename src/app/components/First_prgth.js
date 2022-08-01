@@ -5,13 +5,13 @@ import styled from "@emotion/styled";
 function First_prgth() {
   const Header = styled.p2`
     font-family: Dhyana-Bold;
-    font-size: 32px;
+    font-size: 3.2vh;
     src: local("Dhyana-Bold"), url("./fonts/Dhyana-Bold.ttf") format("truetype");
   `;
 
   const Body = styled.p3`
     font-family: Dhyana-Regular;
-    font-size: 22px;
+    font-size: 2.2vh;
     src: local("Dhyana-Regular"),
       url("./fonts/Dhyana-Regular.ttf") format("truetype");
   `;
@@ -25,9 +25,12 @@ function First_prgth() {
     <Wrapper>
       <Header>First Programmer</Header>
       <Body>
-        это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-        является стандартной "рыбой" для текстов на латинице с начала XVI века.
-        В то время некий безымянный печатник создал
+        Non Lorem adipisicing amet consectetur nostrud.Exercitation cillum eu
+        sunt mollit ut sit incididunt ullamco cillum tempor tempor. Irure magna
+        et nulla sit et voluptate velit ullamco non officia nulla occaecat.
+        Culpa aute nostrud ipsum eu elit minim irure commodo nulla do dolor non.
+        Fugiat do laboris excepteur esse et exercitation reprehenderit
+        adipisicing laborum anim quis aliqua.
       </Body>
     </Wrapper>
   );

@@ -11,13 +11,13 @@ import Footer from "./components/Footer";
 function App() {
   const Wrapper = styled.div`
     display: grid;
-    grid-row-gap: 32px;
+    grid-row-gap: 3vh;
     max-width: 1200px;
   `;
 
   const TextWrapper = styled.div`
     display: grid;
-    grid-row-gap: 32px;
+    grid-row-gap: 3vh;
     max-width: 720px;
     justify-content: center;
     margin: 0 auto;

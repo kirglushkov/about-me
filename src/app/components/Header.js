@@ -5,13 +5,12 @@ import styled from "@emotion/styled";
 import HeaderImage from "../../img/header-image.png";
 
 function Header() {
-  const Image = styled.div`
-    background-image: url(${HeaderImage});
+  const Image = styled.img`
     position: relative;
-    width: 920px;
-    height: 180px;
+    width: 100%;
+    height: auto;
   `;
-  return <Image></Image>;
+  return <Image src={HeaderImage}></Image>;
 }
 
 export default Header;

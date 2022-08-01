@@ -5,13 +5,13 @@ import styled from "@emotion/styled";
 function Second_prgth() {
   const Header = styled.p2`
     font-family: Dhyana-Bold;
-    font-size: 32px;
+    font-size: 3.2vh;
     src: local("Dhyana-Bold"), url("./fonts/Dhyana-Bold.ttf") format("truetype");
   `;
 
   const Body = styled.p3`
     font-family: Dhyana-Regular;
-    font-size: 22px;
+    font-size: 2.2vh;
     src: local("Dhyana-Regular"),
       url("./fonts/Dhyana-Regular.ttf") format("truetype");
   `;

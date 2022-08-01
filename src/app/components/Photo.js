@@ -4,14 +4,13 @@ import styled from "@emotion/styled";
 import PhotoMain from "../../img/photo-main.png";
 
 function Photo() {
-  const Image = styled.div`
-    background-image: url(${PhotoMain});
-    width: 249px;
-    height: 332px;
+  const Image = styled.img`
+    width: 33%;
+    height: auto;
     position: relative;
     margin: 0 auto;
   `;
-  return <Image></Image>;
+  return <Image src={PhotoMain}></Image>;
 }
 
 export default Photo;
