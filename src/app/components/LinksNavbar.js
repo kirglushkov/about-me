@@ -2,7 +2,7 @@ import React from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-function Links() {
+function LinksNavbar() {
   const links = ["youtube", "vk", "github", "twitter"];
 
   const Navbar = styled.div`
@@ -18,13 +18,16 @@ function Links() {
     margin-bottom: -22px;
     margin-top: 32px;
   `;
+  const Link = styled.a({}, (props) => ({ color: props.color }));
   return (
     <Navbar>
       {links.map((item) => (
-        <a href={`https://www.${item}.com/`}>{item}</a>
+        <Link color="hotpink" href={`https://www.${item}.com/`}>
+          {item}
+        </Link>
       ))}
     </Navbar>
   );
 }
 
-export default Links;
+export default LinksNavbar;
