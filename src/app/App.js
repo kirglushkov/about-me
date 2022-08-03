@@ -51,6 +51,21 @@ function App() {
     }
   `;
 
+  const Link = styled.a`
+    color: ${(props) => props.clr};
+  `;
+
+  const links = ["youtube", "vk", "github", "twitter"];
+
+  const Links = links.map((item) => (
+    <Link
+      clr={theme === "light" ? "hotpink" : "yellow"}
+      href={`https://www.${item}.com/`}
+    >
+      {item}
+    </Link>
+  ));
+
   return (
     <div
       css={css`
@@ -73,7 +88,7 @@ function App() {
         <TextWrapper>
           <First_prgth /> <Second_prgth />
         </TextWrapper>
-        <LinksNavbar />
+        <LinksNavbar links={Links} />
         <Footer />
       </Wrapper>
     </div>
