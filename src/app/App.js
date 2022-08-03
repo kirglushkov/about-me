@@ -45,6 +45,10 @@ function App() {
     background-color: ${theme === "light" ? "black" : "white"};
     color: ${theme === "light" ? "white" : "black"};
     border-radius: 10px;
+
+    &:hover {
+      background-color: gray;
+    }
   `;
 
   return (

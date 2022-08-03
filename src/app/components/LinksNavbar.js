@@ -22,7 +22,7 @@ function LinksNavbar() {
   return (
     <Navbar>
       {links.map((item) => (
-        <Link color="hotpink" href={`https://www.${item}.com/`}>
+        <Link color="grey" href={`https://www.${item}.com/`}>
           {item}
         </Link>
       ))}
